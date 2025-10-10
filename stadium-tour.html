@@ -1,0 +1,316 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Real Madrid - Santiago Bernabéu Stadium Tour</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-image: url('stadium.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"></a>
+    <img src="Real_Madrid_CF.svg.png" alt="Real Madrid Logo" style="width:40px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto justify-content-center w-100 text-body">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="aboutDropdown" aria-expanded="false">About Club</a>
+          <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <li><a class="dropdown-item" href="Home.html#history">History</a></li>
+            <li><a class="dropdown-item" href="Home.html#founders">Founders</a></li>
+            <li><a class="dropdown-item" href="Home.html#stadium">Stadium</a></li>
+            <li><a class="dropdown-item" href="Home.html#Manager">Manager</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Fixtures.html">Fixtures</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Team.html">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Trophies.html">Trophies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tickets.html">Tickets</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-primary text-white py-5" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('stadium.jpg') !important; background-size: cover; background-position: center;">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Santiago Bernabéu Stadium Tour</h1>
+    <p class="lead">Experience the heart of Real Madrid with an exclusive tour of the iconic Santiago Bernabéu Stadium</p>
+    <a href="#booking" class="btn btn-light btn-lg">Book Your Tour Now</a>
+  </div>
+</section>
+
+<!-- Tour Information -->
+<section id="tour-info" class="py-5 bg-white bg-opacity-90">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="text-center fw-bold text-primary mb-4">Discover the Legacy</h2>
+        <p class="lead text-center mb-5">Step into the world of Real Madrid and explore the stadium that has witnessed countless historic moments. From the pitch where legends have played to the trophy room showcasing our 14 Champions League titles, the Santiago Bernabéu Tour offers an unforgettable experience for fans of all ages.</p>
+        
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 bg-light shadow">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-trophy text-primary"></i> Trophy Room</h5>
+                <p class="card-text">Admire the collection of trophies, including our record 14 European Cups and numerous domestic honors.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 bg-light shadow">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-futbol text-primary"></i> Pitch Level</h5>
+                <p class="card-text">Walk along the sacred pitch and feel the atmosphere of match day from the players' perspective.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 bg-light shadow">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-users text-primary"></i> Players' Tunnel</h5>
+                <p class="card-text">Experience the walk from the dressing room to the pitch, just like our stars do before every game.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 bg-light shadow">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-museum text-primary"></i> Interactive Museum</h5>
+                <p class="card-text">Relive Real Madrid's history through multimedia exhibits and interactive displays.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tour Options and Prices -->
+<section class="py-5 bg-white bg-opacity-90">
+  <div class="container">
+    <h2 class="text-center fw-bold text-primary mb-5">Tour Options & Prices</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center border-primary bg-light shadow">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Standard Tour</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">The classic tour including pitch, trophy room, and museum.</p>
+            <h4 class="text-primary">€25</h4>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success"></i> 90-minute guided tour</li>
+              <li><i class="fas fa-check text-success"></i> Access to all main areas</li>
+              <li><i class="fas fa-check text-success"></i> Audio guide available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center border-primary bg-light shadow">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">VIP Tour</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Premium experience with exclusive access and VIP amenities.</p>
+            <h4 class="text-primary">€50</h4>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success"></i> Private guide</li>
+              <li><i class="fas fa-check text-success"></i> VIP lounge access</li>
+              <li><i class="fas fa-check text-success"></i> Photo opportunities</li>
+              <li><i class="fas fa-check text-success"></i> Souvenir gift</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center border-primary bg-light shadow">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Family Package</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Special package for families (2 adults + 2 children).</p>
+            <h4 class="text-primary">€80</h4>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success"></i> Discounted child tickets</li>
+              <li><i class="fas fa-check text-success"></i> Family-friendly guide</li>
+              <li><i class="fas fa-check text-success"></i> Interactive activities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section id="booking" class="py-5 bg-white bg-opacity-90">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-center fw-bold text-primary mb-4">Book Your Tour</h2>
+        <p class="text-center lead mb-5">Select your preferred date and tour type to secure your spot. Tours are available daily from 10:00 AM to 6:00 PM.</p>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control bg-white" id="fullName" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control bg-white" id="email" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control bg-white" id="phone" required>
+            </div>
+            <div class="col-md-6">
+              <label for="tourDate" class="form-label">Preferred Date</label>
+              <input type="date" class="form-control bg-white" id="tourDate" required>
+            </div>
+            <div class="col-md-6">
+              <label for="tourType" class="form-label">Tour Type</label>
+              <select class="form-select bg-white" id="tourType" required>
+                <option value="">Select Tour</option>
+                <option value="standard">Standard Tour - €25</option>
+                <option value="vip">VIP Tour - €50</option>
+                <option value="family">Family Package - €80</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="numTickets" class="form-label">Number of Tickets</label>
+              <input type="number" class="form-control bg-white" id="numTickets" min="1" max="10" value="1" required>
+            </div>
+            <div class="col-12">
+              <label for="specialRequests" class="form-label">Special Requests</label>
+              <textarea class="form-control bg-white" id="specialRequests" rows="3"></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="Real_Madrid_CF.svg.png" alt="Real Madrid Logo" class="img-fluid mb-3" style="max-width: 120px;">
+                <p class="text-light">Real Madrid Club de Fútbol, commonly referred to as Real Madrid, is a Spanish professional football club based in Madrid.</p>
+                <div class="d-flex gap-3 justify-content-start">
+                    <a href="https://www.facebook.com/RealMadrid" class="text-light me-2"><i class="fab fa-facebook-f fs-5"></i></a>
+                    <a href="https://twitter.com/realmadrid" class="text-light me-2"><i class="fab fa-twitter fs-5"></i></a>
+                    <a href="https://www.instagram.com/realmadrid/" class="text-light me-2"><i class="fab fa-instagram fs-5"></i></a>
+                    <a href="https://www.youtube.com/user/realmadrid" class="text-light me-2"><i class="fab fa-youtube fs-5"></i></a>
+                    <a href="https://www.tiktok.com/@realmadrid" class="text-light"><i class="fab fa-tiktok fs-5"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5>Club</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a href="Home.html#history" class="text-light">History</a></li>
+                    <li class="mb-1"><a href="Home.html#founders" class="text-light">Founders</a></li>
+                    <li class="mb-1"><a href="Home.html#stadium" class="text-light">Stadium</a></li>
+                    <li class="mb-1"><a href="Home.html#managers" class="text-light">Managers</a></li>
+                    <li class="mb-1"><a href="Home.html#trophies" class="text-light">Trophies</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5>Team</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a href="Team.html" class="text-light">First Team</a></li>
+                    <li class="mb-1"><a href="Fixtures.html" class="text-light">Fixtures</a></li>
+                    <li class="mb-1"><a href="#" class="text-light">Results</a></li>
+                    <li class="mb-1"><a href="#" class="text-light">Table</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5>Fan Zone</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a href="Tickets.html" class="text-light">Tickets</a></li>
+                    <li class="mb-1"><a href="Shop.html" class="text-light">Shop</a></li>
+                    <li class="mb-1"><a href="stadium-tour.html" class="text-light">Stadium Tours</a></li>
+                    <li class="mb-1"><a href="stadium-tour.html" class="text-light">Membership</a></li>
+                    <li class="mb-1"><a href="#" class="text-light">Museum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>&copy; 2025 Real Madrid CF. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+  // Form submission handler - For demo purposes, shows confirmation alert.
+  // To enable real email verification, set up EmailJS with your account:
+  // 1. Sign up at emailjs.com and get your Public Key, Service ID, and Template ID.
+  // 2. Replace placeholders below and uncomment the EmailJS code.
+  // 3. Include the EmailJS script if not already loaded.
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Get form data
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const tourDate = document.getElementById('tourDate').value;
+    const tourType = document.getElementById('tourType').value;
+    const numTickets = document.getElementById('numTickets').value;
+    const specialRequests = document.getElementById('specialRequests').value;
+
+    // For now, simulate booking confirmation (no real email sent in local demo)
+    alert('Thank you, ' + fullName + '! Your Santiago Bernabéu Tour booking for ' + tourDate + ' (' + tourType + ', ' + numTickets + ' tickets) has been received. In a live site, a confirmation email would be sent to ' + email + '. We will contact you shortly to confirm. Special requests: ' + (specialRequests || 'None') + '.');
+
+    console.log('Booking submitted:', { fullName, email, phone, tourDate, tourType, numTickets, specialRequests });
+
+    // Optional: Reset form after submission
+    this.reset();
+  });
+
+  /*
+  // Uncomment and configure for EmailJS integration:
+  // emailjs.init('YOUR_PUBLIC_KEY');
+
+  // In the submit handler, replace the alert with:
+  // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+  //   .then(function(response) {
+  //     alert('Booking confirmed! Email sent to ' + email + '.');
+  //     console.log('SUCCESS!', response.status, response.text);
+  //   }, function(error) {
+  //     alert('Booking received, but email failed. Contact us at info@realmadrid.com.');
+  //     console.log('FAILED...', error);
+  //   });
+  */
+</script>
+</body>
+</html>
