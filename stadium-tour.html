@@ -297,20 +297,20 @@
     this.reset();
   });
 
-  /*
-  // Uncomment and configure for EmailJS integration:
-  // emailjs.init('YOUR_PUBLIC_KEY');
+  
+  
+   emailjs.init('YOUR_PUBLIC_KEY');
 
-  // In the submit handler, replace the alert with:
-  // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-  //   .then(function(response) {
-  //     alert('Booking confirmed! Email sent to ' + email + '.');
-  //     console.log('SUCCESS!', response.status, response.text);
-  //   }, function(error) {
-  //     alert('Booking received, but email failed. Contact us at info@realmadrid.com.');
-  //     console.log('FAILED...', error);
-  //   });
-  */
+  
+   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+     .then(function(response) {
+      alert('Booking confirmed! Email sent to ' + email + '.');
+       console.log('SUCCESS!', response.status, response.text);
+     }, function(error) {
+       alert('Booking received, but email failed. Contact us at info@realmadrid.com.');
+       console.log('FAILED...', error);
+     });
+  
 </script>
 </body>
 </html>
