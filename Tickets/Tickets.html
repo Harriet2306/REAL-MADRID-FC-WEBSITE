@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid - Match Tickets</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <img src="real-madrid-logo-png.png" alt="Real Madrid Logo" style="width:40px;">
+            <a class="navbar-brand fw-bold" href="#">REAL MADRID CF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto justify-content-center w-100 text-body">
+            <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="aboutDropdown" aria-expanded="false">About Club</a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+               <li><a class="dropdown-item" href="#history">History</a></li>
+               <li><a class="dropdown-item" href="#founders">Founders</a></li>
+               <li><a class="dropdown-item" href="#stadium">Stadium</a></li>
+               <li><a class="dropdown-item" href="#Manager">Manager</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="Fixtures.html">Fixtures</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="Team.html">Team</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="Trophies.html">Trophies</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="Shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="Tickets.html">Tickets</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+          </form>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">SANTIAGO BERNABÉU TICKETS</h1>
+            <p class="lead" style="font-family: Arial, Helvetica, sans-serif; word-spacing: 10px;"><marquee>HALA-MADRID HALA-MADRID HALA-MADRID</marquee></p>
+        </div>
+    </div>
+
+    <!-- Upcoming Matches -->
+    <div class="container my-5">
+        <h2 class="fw-bold mb-4">Upcoming Matches</h2>
+        <div class="row g-4">
+            <!-- Match 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Champions League</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                            <div class="text-center" background-image: src="c:/Tickets/UEFA.png">
+                                <img src="real-madrid-logo-png.png" alt="Real Madrid" class="rounded-circle border border-white" style="width: 100px;">
+                            </div>
+                            <div class="fs-4 fw-bold">VS</div>
+                            <div class="text-center">
+                                <img src="juventus-logo.png" alt="Juventus" class="rounded-circle border border-white" style="width: 130px;">
+                            </div>
+                        </div>
+                        <p class="text-muted mb-1"><strong>Date:</strong> October 22, 2025</p>
+                        <p class="text-muted mb-1"><strong>Time:</strong> 22:00</p>
+                        <p class="text-muted mb-3"><strong>Venue:</strong> Santiago Bernabéu</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Available</span>
+                            <span class="fw-bold text-primary">From €85</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Match 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="mb-0">Laliga (el classico)</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                            <div class="text-center">
+                               <img src="real-madrid-logo-png.png" alt="center" style="width: 100px;">
+                            </div>
+                            <div class="fs-4 fw-bold">VS</div>
+                            <div class="text-center">
+                                <img src="OIP.png" alt="center" style="width: 90px;">
+                            </div>
+                        </div>
+                        <p class="text-muted mb-1"><strong>Date:</strong> October 26, 2025</p>
+                        <p class="text-muted mb-1"><strong>Time:</strong> 18:15</p>
+                        <p class="text-muted mb-3"><strong>Venue:</strong> Santiago Bernabéu</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark">Limited</span>
+                            <span class="fw-bold text-primary">From €120</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Match 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="mb-0">La Liga</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                            <div class="text-center">
+                                <img src="real-madrid-logo-png.png" alt="center: my-4" style="width: 100px;">
+                            </div>
+                            <div class="fs-4 fw-bold">VS</div>
+                            <div class="text-center">
+                             <img src="Valencia-Logo.png" alt="center" style="width: 170px;">
+                            </div>
+                        </div>
+                        <p class="text-muted mb-1"><strong>Date:</strong> November 1, 2025</p>
+                        <p class="text-muted mb-1"><strong>Time:</strong> 23:00</p>
+                        <p class="text-muted mb-3"><strong>Venue:</strong> Santiago Bernabéu</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Available</span>
+                            <span class="fw-bold text-primary">From €95</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket Categories -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-center">Ticket Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <h3 class="text-warning mb-3">⭐</h3>
+                            <h4 class="fw-bold">VIP</h4>
+                            <p class="text-muted">Premium seating with exclusive lounge access</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">✓ Best view of the pitch</li>
+                                <li class="mb-2">✓ VIP lounge access</li>
+                                <li class="mb-2">✓ Complimentary drinks</li>
+                                <li class="mb-2">✓ Premium parking</li>
+                            </ul>
+                            <h4 class="text-primary fw-bold">€200+</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <h3 class="text-primary mb-3">🎫</h3>
+                            <h4 class="fw-bold">Premium</h4>
+                            <p class="text-muted">Excellent views with premium amenities</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">✓ Great pitch visibility</li>
+                                <li class="mb-2">✓ Comfortable seating</li>
+                                <li class="mb-2">✓ Fast-track entry</li>
+                                <li class="mb-2">✓ Standard parking</li>
+                            </ul>
+                            <h4 class="text-primary fw-bold">€120+</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <h3 class="text-success mb-3">🎟️</h3>
+                            <h4 class="fw-bold">General</h4>
+                            <p class="text-muted">Standard seating for the passionate fans</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">✓ Good stadium views</li>
+                                <li class="mb-2">✓ Standard seating</li>
+                                <li class="mb-2">✓ Regular entry</li>
+                                <li class="mb-2">✓ Public parking nearby</li>
+                            </ul>
+                            <h4 class="text-primary fw-bold">€65+</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold">Book Your Tickets</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Email Address</label>
+                            <input type="email" class="form-control" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="+34 123 456 789" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Ticket Category</label>
+                                <select class="form-select" required>
+                                    <option value="">Select category</option>
+                                    <option value="vip">VIP - €200</option>
+                                    <option value="premium">Premium - €120</option>
+                                    <option value="general">General - €65</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Number of Tickets</label>
+                                <input type="number" class="form-control" min="1" max="6" value="1" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Seat Preference</label>
+                            <select class="form-select">
+                                <option value="">No preference</option>
+                                <option value="north">North Stand</option>
+                                <option value="south">South Stand</option>
+                                <option value="east">East Stand</option>
+                                <option value="west">West Stand</option>
+                            </select>
+                        </div>
+                        <div class="alert alert-info mb-0">
+                            <strong>Note:</strong> You will receive your e-tickets via email within 24 hours. Please bring a valid ID to the stadium.
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Proceed to Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <h5 class="fw-bold text-center mb-4">Club Sponsors</h5>
+        <div class="d-flex justify-content-around align-items-center flex-wrap mb-4">
+            <div class="text-center mb-3">
+                <img src="hp.png" alt="Emirates" class="img-fluid" style="max-width: 150px;">
+            </div>
+            <div class="text-center mb-3">
+                <img src="apple.png" alt="Adidas" class="img-fluid" style="max-width: 150px;">
+            </div>
+            <div class="text-center mb-3">
+                <img src="adidas.png" alt="Apple" class="img-fluid" style="max-width: 150px;">
+            </div>
+            <div class="text-center mb-3">
+                <img src="appgallery.png" alt="Apple" class="img-fluid" style="max-width: 150px;">
+            </div>
+        </div>
+        <!-- Rest of your footer content -->
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
