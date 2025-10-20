@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid | Team</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <!-- centered navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"></a>
+    <img src="Real_madrid_CF.svg.png" alt="Real Madrid Logo" style="width:40px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto justify-content-center w-100 text-body">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="aboutDropdown" aria-expanded="false">About Club</a>
+          <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <li><a class="dropdown-item" href="#history">History</a></li>
+            <li><a class="dropdown-item" href="#founders">Founders</a></li>
+            <li><a class="dropdown-item" href="#stadium">Stadium</a></li>
+            <li><a class="dropdown-item" href="#Manager">Manager</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Fixtures.html">Fixtures</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Team.html">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Trophies.html">Trophies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tickets.html">Tickets</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-5 mt-5">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Real Madrid Team</h1>
+                    <p class="lead mb-4">Meet the players and coaching staff of the most successful club in football history</p>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <span class="badge bg-warning text-dark fs-6 me-2 mb-2 p-2">14x Champions League</span>
+                        <span class="badge bg-light text-dark fs-6 me-2 mb-2 p-2">35x La Liga</span>
+                        <span class="badge bg-warning text-dark fs-6 mb-2 p-2">5x Club World Cup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-primary border-bottom border-warning border-3 pb-2 mb-5">First Team Squad 2023/24</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="d-flex flex-wrap justify-content-center mb-5">
+                <button class="btn btn-outline-primary rounded-pill m-1 active filter-btn" data-filter="all">All Players</button>
+                <button class="btn btn-outline-primary rounded-pill m-1 filter-btn" data-filter="goalkeeper">Goalkeepers</button>
+                <button class="btn btn-outline-primary rounded-pill m-1 filter-btn" data-filter="defender">Defenders</button>
+                <button class="btn btn-outline-primary rounded-pill m-1 filter-btn" data-filter="midfielder">Midfielders</button>
+                <button class="btn btn-outline-primary rounded-pill m-1 filter-btn" data-filter="forward">Forwards</button>
+            </div>
+            
+            <!-- Players Grid -->
+            <div class="row" id="players-container">
+                <!-- Goalkeepers -->
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="goalkeeper">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://assets.goal.com/images/v3/blt2eb4893bbbf3bf14/Thibaut-Courtois.jpeg?auto=webp&format=pjpg&width=3840&quality=60" alt="Thibaut Courtois" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">1</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Thibaut Courtois</h5>
+                            <p class="card-text text-primary fw-bold">Goalkeeper</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/be.png" alt="Belgium" class="me-2" style="width: 24px;">
+                                Belgium
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="goalkeeper">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-9E6TyRh4l9i6OCZFGCFqz1vlKRXVDo6sjA&s" class="card-img-top" alt="Andriy Lunin" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">13</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Andriy Lunin</h5>
+                            <p class="card-text text-primary fw-bold">Goalkeeper</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/ua.png" alt="Ukraine" class="me-2" style="width: 24px;">
+                                Ukraine
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Defenders -->
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="defender">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gO3Qj3ex9Zq6bkzHyFDUen25ShtW-tkMIQ&s" class="card-img-top" alt="Dani Carvajal" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">2</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dani Carvajal</h5>
+                            <p class="card-text text-primary fw-bold">Right Back</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/es.png" alt="Spain" class="me-2" style="width: 24px;">
+                                Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="defender">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfeHoYkm6nGsxlPsNzcYtSYlK5wNLQLmFaGg&s" class="card-img-top" alt="Éder Militão" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">3</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Éder Militão</h5>
+                            <p class="card-text text-primary fw-bold">Center Back</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/br.png" alt="Brazil" class="me-2" style="width: 24px;">
+                                Brazil
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="defender">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP._0V230LylRcsugnf-XirPwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="David Alaba" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">4</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">David Alaba</h5>
+                            <p class="card-text text-primary fw-bold">Center Back</p>
+                            <p class="card-text">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSPJ5w5EAxRSAi0Tp8bMjKT-s6Raa9Gl0xKQ&s" alt="Austria" class="me-2" style="width: 24px;">
+                                Austria
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="defender">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://platform.managingmadrid.com/wp-content/uploads/sites/103/chorus/uploads/chorus_asset/file/8813843/_1rm2932.jpg?quality=90&strip=all&crop=0,7.2722567287785,100,51.75983436853" class="card-img-top" alt="Jesús Vallejo" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">5</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Jesús Vallejo</h5>
+                            <p class="card-text text-primary fw-bold">Center Back</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/es.png" alt="Spain" class="me-2" style="width: 24px;">
+                                Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="defender">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://e0.365dm.com/25/04/1600x900/skysports-antonio-rudiger-real-madrid_6901125.jpg?20250429211336" class="card-img-top" alt="Antonio Rüdiger" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">22</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Antonio Rüdiger</h5>
+                            <p class="card-text text-primary fw-bold">Center Back</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/de.png" alt="Germany" class="me-2" style="width: 24px;">
+                                Germany
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="defender">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://assets.goal.com/images/v3/getty-2203420303/crop/MM5DIMBQGA5DEMRVGA5G433XMU5DGMRRHIYTANQ=/GettyImages-2203420303.jpg?auto=webp&format=pjpg&width=3840&quality=60" class="card-img-top" alt="Ferland Mendy" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">23</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ferland Mendy</h5>
+                            <p class="card-text text-primary fw-bold">Left Back</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="France" class="me-2" style="width: 24px;">
+                                France
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Midfielders -->
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="midfielder">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://ichef.bbci.co.uk/ace/standard/980/cpsprodpb/d8c2/live/d8a98470-6154-11ef-9a03-19c46e7efc59.jpg" class="card-img-top" alt="Jude Bellingham" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">5</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Jude Bellingham</h5>
+                            <p class="card-text text-primary fw-bold">Central Midfielder</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/gb-eng.png" alt="England" class="me-2" style="width: 24px;">
+                                England
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="midfielder">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://assets.goal.com/images/v3/blta1d2aa3bb22022af/06.gif?auto=webp&format=pjpg&width=3840&quality=60" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">10</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Luka Modrić</h5>
+                            <p class="card-text text-primary fw-bold">Central Midfielder</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/hr.png" alt="Croatia" class="me-2" style="width: 24px;">
+                                Croatia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="midfielder">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjn8cn9JIbs3u5EI8i7SPSa8FEZ6A4uAnRmQ&s" class="card-img-top" alt="Dani Ceballos" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">19</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dani Ceballos</h5>
+                            <p class="card-text text-primary fw-bold">Central Midfielder</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/es.png" alt="Spain" class="me-2" style="width: 24px;">
+                                Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="midfielder">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kTZneTuUh-O4Eqlimc5H-87cT4TwI_OgXw&s" class="card-img-top" alt="Aurélien Tchouaméni" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">18</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Aurélien Tchouaméni</h5>
+                            <p class="card-text text-primary fw-bold">Defensive Midfielder</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="France" class="me-2" style="width: 24px;">
+                                France
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="midfielder">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSgOCmIhy6SJo2zQQWe4ve6Cyx1vNGTNy-w&s" class="card-img-top" alt="Federico Valverde" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">15</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Federico Valverde</h5>
+                            <p class="card-text text-primary fw-bold">Central Midfielder</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/uy.png" alt="Uruguay" class="me-2" style="width: 24px;">
+                                Uruguay
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="midfielder">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://assets.goal.com/images/v3/blt7f1463f490610a73/Camavinga16_9.jpg?auto=webp&format=pjpg&width=3840&quality=60" class="card-img-top" alt="Eduardo Camavinga" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">12</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Eduardo Camavinga</h5>
+                            <p class="card-text text-primary fw-bold">Central Midfielder</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="France" class="me-2" style="width: 24px;">
+                                France
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Forwards -->
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="forward">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVdDG9-SPImSfphFRRdrlKSRixOOK0G9_HbQ&sS" class="card-img-top" alt="Vinícius Júnior" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">7</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vinícius Júnior</h5>
+                            <p class="card-text text-primary fw-bold">Left Winger</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/br.png" alt="Brazil" class="me-2" style="width: 24px;">
+                                Brazil
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="forward">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.RD1Jg5pWsBQVBfN5y-PUOgHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Rodrygo" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">11</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Rodrygo</h5>
+                            <p class="card-text text-primary fw-bold">Right Winger</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/br.png" alt="Brazil" class="me-2" style="width: 24px;">
+                                Brazil
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="forward">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.CYE4MzlrSmp6S_L-6gjR9QHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Joselu" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">14</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Joselu</h5>
+                            <p class="card-text text-primary fw-bold">Striker</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/es.png" alt="Spain" class="me-2" style="width: 24px;">
+                                Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4" data-category="forward">
+                    <div class="card shadow-sm h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://icdn.football-espana.net/wp-content/uploads/2024/10/brahim-diaz-real-madrid-celebracion.jpg" class="card-img-top" alt="Brahim Díaz" style="height: 280px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 bg-primary text-white rounded-circle m-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">21</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Brahim Díaz</h5>
+                            <p class="card-text text-primary fw-bold">Attacking Midfielder</p>
+                            <p class="card-text">
+                                <img src="https://flagcdn.com/w40/es.png" alt="Spain" class="me-2" style="width: 24px;">
+                                Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaching Staff Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-primary border-bottom border-warning border-3 pb-2 mb-5">Coaching Staff</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card border-start border-warning border-4 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEKS27wa9cqKsHbYLqrkeHGiXGFKrSHXy1g&s" alt="Carlo Ancelotti" class="rounded-circle me-4" style="width: 90px; height: 90px; object-fit: cover;">
+                                <div>
+                                    <h5 class="card-title mb-1">Carlo Ancelotti</h5>
+                                    <p class="card-text text-muted">Head Coach</p>
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary me-1">Italy</span>
+                                        <span class="badge bg-success">Since 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text mt-3">Italian manager with extensive experience, having won numerous domestic and international titles throughout his career. The only manager to win four Champions League titles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card border-start border-warning border-4 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="https://external-preview.redd.it/santi-aouna-davide-ancelotti-is-one-of-the-names-on-stade-v0-aX6B5GgeYOXt4zODBQL5SoCLnL7rFhS882K84EDpZv4.jpg?width=640&crop=smart&auto=webp&s=f313066d9091cb7b12ac60c9c2e3f79ebb42920b" alt="Davide Ancelotti" class="rounded-circle me-4" style="width: 90px; height: 90px; object-fit: cover;">
+                                <div>
+                                    <h5 class="card-title mb-1">Davide Ancelotti</h5>
+                                    <p class="card-text text-muted">Assistant Coach</p>
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary me-1">Italy</span>
+                                        <span class="badge bg-success">Since 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text mt-3">Son of Carlo Ancelotti, he has worked alongside his father at several clubs and brings tactical expertise to the coaching staff. Known for his analytical approach to the game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Club Statistics</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="display-4 fw-bold text-warning">14</div>
+                    <p class="fs-5">UEFA Champions League Titles</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="display-4 fw-bold text-warning">35</div>
+                    <p class="fs-5">La Liga Titles</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="display-4 fw-bold text-warning">19</div>
+                    <p class="fs-5">Copa del Rey Titles</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="display-4 fw-bold text-warning">5</div>
+                    <p class="fs-5">FIFA Club World Cups</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="Real_madrid_CF.svg.png" alt="Real Madrid Logo" class="img-fluid mb-3" style="max-width: 120px;">
+                    <p class="text-light">Real Madrid Club de Fútbol, commonly referred to as Real Madrid, is a Spanish professional football club based in Madrid.</p>
+                    <div class="d-flex gap-3 justify-content-start">
+                        <a href="https://www.facebook.com/RealMadrid" class="text-light me-2"><i class="fab fa-facebook-f fs-5"></i></a>
+                        <a href="https://twitter.com/realmadrid" class="text-light me-2"><i class="fab fa-twitter fs-5"></i></a>
+                        <a href="https://www.instagram.com/realmadrid/" class="text-light me-2"><i class="fab fa-instagram fs-5"></i></a>
+                        <a href="https://www.youtube.com/user/realmadrid" class="text-light me-2"><i class="fab fa-youtube fs-5"></i></a>
+                        <a href="https://www.tiktok.com/@realmadrid" class="text-light"><i class="fab fa-tiktok fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Club</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a href="#history" class="text-light">History</a></li>
+                        <li class="mb-1"><a href="#founders" class="text-light">Founders</a></li>
+                        <li class="mb-1"><a href="#stadium" class="text-light">Stadium</a></li>
+                        <li class="mb-1"><a href="#managers" class="text-light">Managers</a></li>
+                        <li class="mb-1"><a href="#trophies" class="text-light">Trophies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Team</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a href="#team" class="text-light">First Team</a></li>
+                        <li class="mb-1"><a href="Fixtures.html" class="text-light">Fixtures</a></li>
+                        <li class="mb-1"><a href="#" class="text-light">Results</a></li>
+                        <li class="mb-1"><a href="#" class="text-light">Table</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Fan Zone</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a href="Tickets.html" class="text-light">Tickets</a></li>
+                        <li class="mb-1"><a href="Shop.html" class="text-light">Shop</a></li>
+                        <li class="mb-1"><a href="stadium-tour.html" class="text-light">Membership</a></li>
+                        <li class="mb-1"><a href="stadium-tour.html" class="text-light">Stadium Tours</a></li>
+                        <li class="mb-1"><a href="#" class="text-light">Museum</a></li>
+                    </ul>
+                </div>
+                
+          
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2025 Real Madrid CF. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript for player filtering -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const playerCards = document.querySelectorAll('#players-container .col-md-6');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    playerCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
